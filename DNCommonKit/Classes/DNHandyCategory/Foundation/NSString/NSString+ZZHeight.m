@@ -8,6 +8,8 @@
 
 #import "NSString+ZZHeight.h"
 
+#define PLACEFODERSTRING (NSString *)@"占位"
+
 @implementation NSString (ZZHeight)
 
 - (CGFloat)zz_heightWithFont:(UIFont *)font width:(CGFloat)width{
@@ -53,5 +55,14 @@
                             attributes:dic
                                context:nil].size;
 }
+    
+- (BOOL)zz_isSingleLineForLabel:(UILabel *)label {
+    if ([self stringSizeWithFont:label.font size:CGSizeMake(label.frame.size.width, MAXFLOAT)].height > [PLACEFODERSTRING stringSizeWithFont:label.font size:CGSizeMake(label.frame.size.width, MAXFLOAT)].height) {
+        return NO;
+    }
+    return YES;
+}
+    
+
 
 @end

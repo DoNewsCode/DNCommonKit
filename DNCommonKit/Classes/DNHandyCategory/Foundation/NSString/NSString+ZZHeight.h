@@ -27,7 +27,7 @@
 
  @param font 字体
  @param width 宽度
- @param MaxHeight 最大高度
+ @param maxHeight 最大高度
  @return 高度
  */
 - (CGFloat)zz_heightWithFont:(UIFont *)font width:(CGFloat)width maxHeight:(CGFloat)maxHeight;
@@ -41,5 +41,7 @@
  @return 宽度
  */
 - (CGFloat)zz_widthWith:(UIFont *)font height:(CGFloat)height;
+    
+- (BOOL)zz_isSingleLineForLabel:(UILabel *)label;
 
 @end

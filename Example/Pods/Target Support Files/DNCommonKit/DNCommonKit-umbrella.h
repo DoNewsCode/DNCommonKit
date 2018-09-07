@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "TGCustomLabel.h"
+#import "XDProgressView.h"
 #import "NSArray+ZZGuard.h"
 #import "NSDictionary+ZZGuard.h"
 #import "NSData+ZZHash.h"
