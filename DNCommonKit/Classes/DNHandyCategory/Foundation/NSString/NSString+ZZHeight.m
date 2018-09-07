@@ -15,17 +15,6 @@
 - (CGFloat)zz_heightWithFont:(UIFont *)font width:(CGFloat)width{
     return    [self zz_heightWithFont:font width:width maxHeight:CGFLOAT_MAX];
 }
-
-
-/**
- 指定宽度 计算文字高度设置最大值
- 
- 
- @param font 字体
- @param width 宽度
- @param MaxHeight 最大高度
- @return 高度
- */
     
 - (CGFloat)zz_heightWithFont:(UIFont *)font width:(CGFloat)width maxHeight:(CGFloat)maxHeight {
     
@@ -45,6 +34,10 @@
     CGFloat width = [self sizeWithFont:font constrainedToSize:CGSizeMake(MAXFLOAT,height) lineBreakMode:NSLineBreakByCharWrapping].width;
 #pragma clang diagnostic pop
     return width;
+}
+    
+- (CGFloat)zz_widthWithFont:(UIFont *)font {
+    return [self zz_widthWith:font height:20];
 }
 
 - (CGSize)stringSizeWithFont:(UIFont *)font size:(CGSize)size

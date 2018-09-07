@@ -32,6 +32,14 @@
  */
 - (CGFloat)zz_heightWithFont:(UIFont *)font width:(CGFloat)width maxHeight:(CGFloat)maxHeight;
 
+    
+/**
+ 根据高度计算文字宽度 20的高
+     
+ @param font 字体
+ @return 宽度
+*/
+- (CGFloat)zz_widthWithFont:(UIFont *)font;
 
 /**
  指定高度 计算文字宽度
