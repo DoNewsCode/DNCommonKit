@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DNCommonKit_Example' do
+  pod 'DNCommonKit', :path => '../'
+
+  target 'DNCommonKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
