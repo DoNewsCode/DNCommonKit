@@ -53,5 +53,22 @@
     UIGraphicsEndImageContext();
     return theImage;
 }
+    
+    //返回特定尺寸的UImage  ,  image参数为原图片，size为要设定的图片大小
++ (instancetype)zz_resizeImageToSize:(CGSize)size
+                     sizeOfImage:(UIImage*)image
+    {
+        UIGraphicsBeginImageContext(size);
+        //获取上下文内容
+        CGContextRef ctx= UIGraphicsGetCurrentContext();
+        CGContextTranslateCTM(ctx, 0.0, size.height);
+        CGContextScaleCTM(ctx, 1.0, -1.0);
+        //重绘image
+        CGContextDrawImage(ctx,CGRectMake(0.0f, 0.0f, size.width, size.height), image.CGImage);
+        //根据指定的size大小得到新的image
+        UIImage* scaled= UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return scaled;
+    }
 
 @end

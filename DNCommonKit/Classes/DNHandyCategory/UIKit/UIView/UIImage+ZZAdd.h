@@ -16,5 +16,9 @@
 + (instancetype)zz_imageClip:(UIImage *)image;
 /** 单一的颜色生成图片 */
 + (instancetype)zz_imageWithColor:(UIColor*)color;
+    /** 返回特定尺寸的UImag/image参数为原图片，size为要设定的图片大小 */
++ (instancetype)zz_resizeImageToSize:(CGSize)size
+                     sizeOfImage:(UIImage*)image;
+
 
 @end
