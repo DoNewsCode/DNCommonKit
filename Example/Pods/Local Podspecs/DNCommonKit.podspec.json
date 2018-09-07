@@ -1,0 +1,27 @@
+{
+  "name": "DNCommonKit",
+  "version": "1",
+  "summary": "存放重用的分类、工具类等",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/DoNewsCode/DNCommonKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "540563689@qq.com": "zhengjia@donews.com"
+  },
+  "source": {
+    "git": "https://github.com/DoNewsCode/DNCommonKit.git",
+    "tag": "1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DNCommonKit/Classes/**/*",
+  "dependencies": {
+    "SDWebImage": [
+
+    ]
+  }
+}
