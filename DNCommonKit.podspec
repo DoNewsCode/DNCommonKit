@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DNCommonKit'
-  s.version          = '3'
+  s.version          = '4'
   s.summary          = '存放重用的分类、工具类等'
 
 # This description is used to generate tags and improve search results.

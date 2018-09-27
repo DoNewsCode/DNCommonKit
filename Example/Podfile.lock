@@ -1,5 +1,5 @@
 PODS:
-  - DNCommonKit (3):
+  - DNCommonKit (4):
     - SDWebImage
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DNCommonKit: 5b44d2d64202bfc23e0218ee6bb7f818176abab3
+  DNCommonKit: 3e1108d3a126e85280068094cc6a12dbb7404906
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
 
 PODFILE CHECKSUM: 8fd922ed731fffcb60fd53e4177e50ac762d5050
