@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DNCommonKit'
-  s.version          = '4'
+  s.version          = '5'
   s.summary          = '存放重用的分类、工具类等'
 
 # This description is used to generate tags and improve search results.
@@ -24,13 +24,26 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/DoNewsCode/DNCommonKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '540563689@qq.com' => 'zhengjia@donews.com' }
+  s.author           = { 'JiaJung' => 'zhengjia@donews.com' }
   s.source           = { :git => 'https://github.com/DoNewsCode/DNCommonKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DNCommonKit/Classes/**/*'
+# s.source_files = 'DNCommonKit/Classes/**/*'
+
+s.subspec 'DNBaseMacro' do |m|
+    m.source_files = 'DNCommonKit/Classes/DNBaseMacro/**/*.h'
+end
+
+s.subspec 'DNCustomView' do |v|
+    v.source_files = 'DNCommonKit/Classes/DNCustomView/**/*.h'
+end
+
+s.subspec 'DNHandyCategory' do |c|
+    c.source_files = 'DNCommonKit/Classes/DNHandyCategory/**/*.h'
+    c.dependency 'SDWebImage'
+end
   
   # s.resource_bundles = {
   #   'DNCommonKit' => ['DNCommonKit/Assets/*.png']
@@ -39,6 +52,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'SDWebImage'
+  #s.dependency 'SDWebImage'
   
 end
