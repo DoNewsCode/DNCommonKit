@@ -8,8 +8,6 @@
 #ifndef DNHandyCategory_h
 #define DNHandyCategory_h
 
-#import "DNBaseMacro.h"
-
 #import "UIView+JAExt.h"
 #import "UIView+Shadow.h"
 #import "UIColor+Hex.h"

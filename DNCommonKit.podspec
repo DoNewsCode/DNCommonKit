@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DNCommonKit'
-  s.version          = '5'
+  s.version          = '6'
   s.summary          = '存放重用的分类、工具类等'
 
 # This description is used to generate tags and improve search results.
@@ -33,15 +33,15 @@ TODO: Add long description of the pod here.
 # s.source_files = 'DNCommonKit/Classes/**/*'
 
 s.subspec 'DNBaseMacro' do |m|
-    m.source_files = 'DNCommonKit/Classes/DNBaseMacro/**/*.h'
+    m.source_files = 'DNCommonKit/Classes/DNBaseMacro/**/*'
 end
 
 s.subspec 'DNCustomView' do |v|
-    v.source_files = 'DNCommonKit/Classes/DNCustomView/**/*.h'
+    v.source_files = 'DNCommonKit/Classes/DNCustomView/**/*'
 end
 
 s.subspec 'DNHandyCategory' do |c|
-    c.source_files = 'DNCommonKit/Classes/DNHandyCategory/**/*.h'
+    c.source_files = 'DNCommonKit/Classes/DNHandyCategory/**/*'
     c.dependency 'SDWebImage'
 end
   
