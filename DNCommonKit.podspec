@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DNCommonKit'
-  s.version          = '7'
+  s.version          = '8'
   s.summary          = '存放重用的分类、工具类等'
 
 # This description is used to generate tags and improve search results.
@@ -46,15 +46,17 @@ s.subspec 'DNTools' do |t|
     t.dependency 'YYText'
 end
 
+s.subspec 'DNLayout' do |l|
+    l.source_files = 'DNCommonKit/Classes/DNLayout/**/*'
+end
+
 s.subspec 'DNHandyCategory' do |c|
     c.source_files = 'DNCommonKit/Classes/DNHandyCategory/**/*'
     c.dependency 'SDWebImage'
     c.dependency 'DNCommonKit/DNLayout'
 end
 
-s.subspec 'DNLayout' do |l|
-    l.source_files = 'DNCommonKit/Classes/DNLayout/**/*'
-end
+
   
   # s.resource_bundles = {
   #   'DNCommonKit' => ['DNCommonKit/Assets/*.png']

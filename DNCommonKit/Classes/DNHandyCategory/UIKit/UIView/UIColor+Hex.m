@@ -7,25 +7,7 @@
 //
 
 #import "UIColor+Hex.h"
-@interface NSString(safe)
-- (NSString *)dn_substringWithRange:(NSRange)range;
-
-@end
-@implementation NSString (safe)
-- (NSString *)dn_substringWithRange:(NSRange)range{
-#ifdef DEBUG
-    
-    if (self.length >=(range.location + range.length)) {
-        
-        return [self substringWithRange:range];
-        
-    }
-    return nil;
-#elif
-    return [self substringWithRange:range];
-#endif
-}
-@end
+#import "NSString+TGAdd.h"
 
 @implementation UIColor (Hex)
 
