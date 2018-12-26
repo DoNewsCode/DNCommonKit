@@ -32,13 +32,14 @@
 #import "UIButton+TGActionBlock.h"
 #import "UIButton+TitlePlace.h"
 #import "UIColor+Hex.h"
-#import "UIImage+ZZAdd.h"
+#import "UIImage+Add.h"
 #import "UIImageView+TGCache.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "UIProgressView+Radius.h"
-#import "UIView+JAExt.h"
 #import "UIView+Shadow.h"
 #import "UIView+TargetAction.h"
+#import "UIView+Layout.h"
+#import "DNYYTextTool.h"
 
 FOUNDATION_EXPORT double DNCommonKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char DNCommonKitVersionString[];

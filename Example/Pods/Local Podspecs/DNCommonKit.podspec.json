@@ -1,6 +1,6 @@
 {
   "name": "DNCommonKit",
-  "version": "6",
+  "version": "7",
   "summary": "存放重用的分类、工具类等",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/DoNewsCode/DNCommonKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/DoNewsCode/DNCommonKit.git",
-    "tag": "6"
+    "tag": "7"
   },
   "platforms": {
     "ios": "8.0"
@@ -25,7 +25,21 @@
     },
     {
       "name": "DNCustomView",
-      "source_files": "DNCommonKit/Classes/DNCustomView/**/*"
+      "source_files": "DNCommonKit/Classes/DNCustomView/**/*",
+      "dependencies": {
+        "DNCommonKit/DNHandyCategory": [
+
+        ]
+      }
+    },
+    {
+      "name": "DNTools",
+      "source_files": "DNCommonKit/Classes/DNTools/**/*",
+      "dependencies": {
+        "YYText": [
+
+        ]
+      }
     },
     {
       "name": "DNHandyCategory",
@@ -33,8 +47,15 @@
       "dependencies": {
         "SDWebImage": [
 
+        ],
+        "DNCommonKit/DNLayout": [
+
         ]
       }
+    },
+    {
+      "name": "DNLayout",
+      "source_files": "DNCommonKit/Classes/DNLayout/**/*"
     }
   ]
 }
