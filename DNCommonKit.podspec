@@ -54,8 +54,12 @@ s.subspec 'DNHandyCategory' do |c|
     c.source_files = 'DNCommonKit/Classes/DNHandyCategory/**/*'
     c.dependency 'SDWebImage'
     c.dependency 'DNCommonKit/DNLayout'
+    c.pod_target_xcconfig = {
+        "GCC_PREPROCESSOR_DEFINITIONS" => 'DEBUG=1'
+    }
 end
 
+#s.user_target_xcconfig = { 'MY_SUBSPEC' => 'YES' }
 
   
   # s.resource_bundles = {

@@ -20,16 +20,16 @@
 
 - (instancetype)dn_substringWithRange:(NSRange)range{
 #ifdef DEBUG
-    
     if (self.length >=(range.location + range.length)) {
-        
+
         return [self substringWithRange:range];
-        
+
     }
     return nil;
 #elif
     return [self substringWithRange:range];
 #endif
+    return nil;
 }
 
 @end
