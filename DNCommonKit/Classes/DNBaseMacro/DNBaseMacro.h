@@ -80,23 +80,24 @@ _Pragma("clang diagnostic pop")\
 } while (0)
 
 
-
 ///-----------------------
 ///  常用宏定义、预编译指令
 ///-----------------------
 
-/// 判断字符串是否为空
+/// 判断一个对象是否为nil或null 返回YES说明对象为nil
+#define DNIsNil(_ref)  (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
+
+/// 判断字符串是否为空 返回YES说明为空
 #define DNIsEmptyStr(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length]< 1 ? YES : NO )
-/// 判断数组是否为空
+/// 判断数组是否为空 返回YES说明为空
 #define DNIsEmptyArray(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
-/// 判断字典是否为空
+/// 判断字典是否为空 返回YES说明为空
 #define DNIsEmptyDict(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
 
 
 /// NSLog 的宏定义
 #ifdef DEBUG
-#define DNLog(fmt, ...) NSLog((@"\n>>>>>" fmt), ##__VA_ARGS__);
-# define DNLogError(fmt, ...) NSLog((@"\n#####%s-》%s [line %d]\n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+# define DNLog(fmt, ...) NSLog((@"\n#####%s-》%s [line %d]\n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
 
 #else
 # define DLog(...);

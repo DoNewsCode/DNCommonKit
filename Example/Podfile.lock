@@ -1,18 +1,18 @@
 PODS:
-  - DNCommonKit (9.3):
-    - DNCommonKit/DNBaseMacro (= 9.3)
-    - DNCommonKit/DNCustomView (= 9.3)
-    - DNCommonKit/DNHandyCategory (= 9.3)
-    - DNCommonKit/DNLayout (= 9.3)
-    - DNCommonKit/DNTools (= 9.3)
-  - DNCommonKit/DNBaseMacro (9.3)
-  - DNCommonKit/DNCustomView (9.3):
+  - DNCommonKit (9.4):
+    - DNCommonKit/DNBaseMacro (= 9.4)
+    - DNCommonKit/DNCustomView (= 9.4)
+    - DNCommonKit/DNHandyCategory (= 9.4)
+    - DNCommonKit/DNLayout (= 9.4)
+    - DNCommonKit/DNTools (= 9.4)
+  - DNCommonKit/DNBaseMacro (9.4)
+  - DNCommonKit/DNCustomView (9.4):
     - DNCommonKit/DNHandyCategory
-  - DNCommonKit/DNHandyCategory (9.3):
+  - DNCommonKit/DNHandyCategory (9.4):
     - DNCommonKit/DNLayout
     - SDWebImage
-  - DNCommonKit/DNLayout (9.3)
-  - DNCommonKit/DNTools (9.3):
+  - DNCommonKit/DNLayout (9.4)
+  - DNCommonKit/DNTools (9.4):
     - YYText
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -34,7 +34,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DNCommonKit: 4bafc6cc45803d40b590c481152163ff32beb27c
+  DNCommonKit: ae7bc626b6fa410004a89094654e9cb8176d4212
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
