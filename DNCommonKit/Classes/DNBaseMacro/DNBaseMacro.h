@@ -41,7 +41,15 @@
 #define iphone6                         [UIScreen mainScreen].bounds.size.height==667
 #define iphone6p                        [UIScreen mainScreen].bounds.size.height==736
 #define iphonePlush                     [UIScreen mainScreen].bounds.size.width==414
-#define iPhoneX                         [UIScreen mainScreen].bounds.size.height==812
+//#define iPhoneX                         [UIScreen mainScreen].bounds.size.height==812
+// 判断是否为iPhone X 系列  这样写消除了在Xcode10上的警告
+#define iPhoneX \
+({BOOL isPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(isPhoneX);})
+
 
 // 适配iOS 11 & iPhoneX
 #define DNStatuBarHeight  (iPhoneX ? 44.00 : 20.00)
@@ -132,3 +140,14 @@ _Pragma("clang diagnostic pop")\
 
 
 #endif /* DNBaseMacro_h */
+
+
+/// NSLog 的宏定义
+#ifdef DEBUG
+#define DNLog(fmt, ...) NSLog((@"\n>>>>>" fmt), ##__VA_ARGS__);
+# define DNLogError(fmt, ...) NSLog((@"\n#####%s-》%s [line %d]\n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+#else
+# define DLog(...);
+# define DNLogError(...);
+#endif

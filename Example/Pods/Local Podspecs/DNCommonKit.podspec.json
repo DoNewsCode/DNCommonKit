@@ -1,6 +1,6 @@
 {
   "name": "DNCommonKit",
-  "version": "9.1",
+  "version": "9.2",
   "summary": "存放重用的分类、工具类等",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/DoNewsCode/DNCommonKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/DoNewsCode/DNCommonKit.git",
-    "tag": "9.1"
+    "tag": "9.2"
   },
   "platforms": {
     "ios": "8.0"
