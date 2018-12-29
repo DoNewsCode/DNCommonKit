@@ -61,22 +61,18 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 //顶导航+状态栏高度
 #define kNAVSTATE_H (self.navigationController.navigationBar.height + [UIApplication sharedApplication].statusBarFrame.size.height)
 
+
 // 适配 iOS 11 重写 adjustsScrollViewInsets
-#define adjustsScrollViewInsets(scrollView)\
-do {\
-_Pragma("clang diagnostic push")\
-_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"")\
-if ([scrollView respondsToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
-NSMethodSignature *signature = [UIScrollView instanceMethodSignatureForSelector:@selector(setContentInsetAdjustmentBehavior:)];\
-NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];\
-NSInteger argument = 2;\
-invocation.target = scrollView;\
-invocation.selector = @selector(setContentInsetAdjustmentBehavior:);\
-[invocation setArgument:&argument atIndex:2];\
-[invocation retainArguments];\
-[invocation invoke];\
+#define  adjustsScrollViewInsets_NO(scrollView,vc)\
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+[scrollView   performSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:") withObject:@(2)];\
+} else {\
+vc.automaticallyAdjustsScrollViewInsets = NO;\
 }\
-_Pragma("clang diagnostic pop")\
+_Pragma("clang diagnostic pop") \
 } while (0)
 
 
@@ -86,7 +82,6 @@ _Pragma("clang diagnostic pop")\
 
 /// 判断一个对象是否为nil或null 返回YES说明对象为nil
 #define DNIsNil(_ref)  (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
-
 /// 判断字符串是否为空 返回YES说明为空
 #define DNIsEmptyStr(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length]< 1 ? YES : NO )
 /// 判断数组是否为空 返回YES说明为空
