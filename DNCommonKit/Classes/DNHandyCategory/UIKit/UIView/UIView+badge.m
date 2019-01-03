@@ -6,7 +6,7 @@
 //  Copyright © 2017年 杨岫峰. All rights reserved.
 //
 #import "UIView+badge.h"
-#import "DNColorManager.h"
+//#import "DNColorManager.h"
 #import <objc/runtime.h>
 
 
@@ -34,7 +34,7 @@ NSString const *UIView_badgeValueKey = @"UIView_badgeValueKey";
 - (void)badgeInit
 {
     // Default design initialization
-    self.badgeBGColor   = [DNColorManager sharedInstance].standardMain;
+    self.badgeBGColor   = [UIColor redColor];
     self.badgeTextColor = [UIColor whiteColor];
     self.badgeFont      = [UIFont systemFontOfSize:10.0];
     self.badgePadding   = 6;
