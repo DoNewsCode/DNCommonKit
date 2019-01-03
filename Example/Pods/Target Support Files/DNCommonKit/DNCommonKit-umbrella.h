@@ -36,6 +36,7 @@
 #import "UIImageView+TGCache.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "UIProgressView+Radius.h"
+#import "UIView+badge.h"
 #import "UIView+Shadow.h"
 #import "UIView+TargetAction.h"
 #import "UIView+Layout.h"
