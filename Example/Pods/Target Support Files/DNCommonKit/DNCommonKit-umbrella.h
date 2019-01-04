@@ -14,6 +14,7 @@
 #import "TGCustomLabel.h"
 #import "XDProgressView.h"
 #import "DNHandyCategory.h"
+#import "NSArray+Log.h"
 #import "NSArray+ZZGuard.h"
 #import "NSDictionary+ZZGuard.h"
 #import "NSData+ZZHash.h"
