@@ -22,7 +22,7 @@
 }
 
 /**字符串时间戳转date*/
--(NSDate *)ct_dateFromTimeInterval{
+-(NSDate *)ct_dateFromTimeInterval {
     
     NSTimeInterval interval = [self doubleValue]; // 把时间戳转化成时间
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:interval];
@@ -169,7 +169,7 @@
     NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
     
     NSTimeInterval a=[dat timeIntervalSince1970];
-    NSString*timeString = [NSString stringWithFormat:@"%0.f", a];
+    NSString*timeString = [NSString stringWithFormat:@"%0.f",a];
     return timeString;
 }
 

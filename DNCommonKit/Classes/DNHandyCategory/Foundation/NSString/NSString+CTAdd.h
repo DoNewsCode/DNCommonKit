@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)ct_substringWithRange:(NSRange)range;
 
+/// nil, @"", @"  ", @"\n" will Returns NO; otherwise Returns YES.
+- (BOOL)ct_blank;
+
 @end
 
 NS_ASSUME_NONNULL_END

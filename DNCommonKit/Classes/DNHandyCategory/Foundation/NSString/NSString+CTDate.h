@@ -24,7 +24,7 @@
 // Class Method
 //-------------
 /** 获取当前时间的时间戳 */
-+ (NSString *)ct_timeStampForNow ;
++ (NSString *)ct_timeStampForNow;
 /** 传入秒数返回 HH:mm:ss 格式字符串 */
 + (NSString *)ct_stringHMSWithSecond:(NSUInteger)second;
 /** 传入秒数返回 mm:ss 格式字符串 */
