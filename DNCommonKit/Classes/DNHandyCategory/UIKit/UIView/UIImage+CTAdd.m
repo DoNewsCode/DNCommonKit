@@ -53,7 +53,7 @@
 }
 
 //返回特定尺寸的UImage  ,  image参数为原图片，size为要设定的图片大小
-+ (UIImage*)ct_resizeImageToSize:(CGSize)size sizeOfImage:(UIImage*)image {
++ (instancetype)ct_resizeImageToSize:(CGSize)size sizeOfImage:(UIImage*)image {
     UIGraphicsBeginImageContext(size);
     //获取上下文内容
     CGContextRef ctx= UIGraphicsGetCurrentContext();
@@ -67,5 +67,24 @@
     return scaled;
 }
 
+//最小尺寸---1px
+static CGFloat ct_UIImageEdgeSizeWithRadius(CGFloat cornerRadius) {
+    return cornerRadius * 2 + 1;
+}
+
++ (instancetype)ct_imageWithColor:(UIColor *)color cornerRadius:(CGFloat)cornerRadius {
+    CGFloat minEdgeSize = ct_UIImageEdgeSizeWithRadius(cornerRadius);
+    CGRect rect = CGRectMake(0, 0, minEdgeSize, minEdgeSize);
+    UIBezierPath *roundedRect = [UIBezierPath bezierPathWithRoundedRect:rect cornerRadius:cornerRadius];
+    roundedRect.lineWidth = 0;
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0.0f);
+    [color setFill];
+    [roundedRect fill];
+    [roundedRect stroke];
+    [roundedRect addClip];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return [image resizableImageWithCapInsets:UIEdgeInsetsMake(cornerRadius, cornerRadius, cornerRadius, cornerRadius)];
+}
 
 @end
