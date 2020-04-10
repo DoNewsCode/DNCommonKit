@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 颜色转换三：iOS中十六进制的颜色（以#开头）转换为UIColor
 + (UIColor *)ct_colorWithHexString: (NSString *)color;
 
+// 随机颜色
++ (UIColor *)ct_randomColor;
+
 
 @end
 
