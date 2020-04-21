@@ -1,18 +1,18 @@
 PODS:
-  - DNCommonKit (9.8):
-    - DNCommonKit/DNBaseMacro (= 9.8)
-    - DNCommonKit/DNCustomView (= 9.8)
-    - DNCommonKit/DNHandyCategory (= 9.8)
-    - DNCommonKit/DNLayout (= 9.8)
-    - DNCommonKit/DNTools (= 9.8)
-  - DNCommonKit/DNBaseMacro (9.8)
-  - DNCommonKit/DNCustomView (9.8):
+  - DNCommonKit (9.9.6):
+    - DNCommonKit/DNBaseMacro (= 9.9.6)
+    - DNCommonKit/DNCustomView (= 9.9.6)
+    - DNCommonKit/DNHandyCategory (= 9.9.6)
+    - DNCommonKit/DNLayout (= 9.9.6)
+    - DNCommonKit/DNTools (= 9.9.6)
+  - DNCommonKit/DNBaseMacro (9.9.6)
+  - DNCommonKit/DNCustomView (9.9.6):
     - DNCommonKit/DNHandyCategory
-  - DNCommonKit/DNHandyCategory (9.8):
+  - DNCommonKit/DNHandyCategory (9.9.6):
     - DNCommonKit/DNLayout
     - SDWebImage
-  - DNCommonKit/DNLayout (9.8)
-  - DNCommonKit/DNTools (9.8):
+  - DNCommonKit/DNLayout (9.9.6)
+  - DNCommonKit/DNTools (9.9.6):
     - YYText
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -25,7 +25,7 @@ DEPENDENCIES:
   - YYText
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - SDWebImage
     - YYText
 
@@ -34,10 +34,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DNCommonKit: 6a3040af6566522403a3559f3f2bf0357f0afaa2
+  DNCommonKit: 9fab62e6cfef2c1aa13befbd0d48d7fe81535dba
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
 PODFILE CHECKSUM: aa67c5e5d59b1c9748b471c5c8eabdd1756d12d8
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.0

@@ -7,6 +7,7 @@
 //
 
 #import "DNViewController.h"
+#import "NSString+CTAdd.h"
 
 @interface DNViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *temp = [NSString ct_formatCountStringWithCount:10000];
+    NSString *temp1 = [NSString ct_commentCountStringWithCount:10000];
+    NSLog(@"ct_formatCountStringWithCount-------:%@",temp);
+    NSLog(@"ct_commentCountStringWithCount-------:%@",temp1);
 }
 
 - (void)didReceiveMemoryWarning

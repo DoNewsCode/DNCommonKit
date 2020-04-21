@@ -304,7 +304,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DNCommonKit_Example/Pods-DNCommonKit_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DNCommonKit_Example/Pods-DNCommonKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DNCommonKit/DNCommonKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
@@ -317,7 +317,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNCommonKit_Example/Pods-DNCommonKit_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DNCommonKit_Example/Pods-DNCommonKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5DCDEC500ED73A25ADCE90C4 /* [CP] Check Pods Manifest.lock */ = {
@@ -344,7 +344,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DNCommonKit_Tests/Pods-DNCommonKit_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DNCommonKit_Tests/Pods-DNCommonKit_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
 			);
@@ -355,7 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DNCommonKit_Tests/Pods-DNCommonKit_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DNCommonKit_Tests/Pods-DNCommonKit_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B72FCEA845736D02D2037E55 /* [CP] Check Pods Manifest.lock */ = {
