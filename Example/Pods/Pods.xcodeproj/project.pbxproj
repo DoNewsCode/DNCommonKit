@@ -48,6 +48,8 @@
 		3A4188EC246A90DA009BBF06 /* NSAttributedString+CTHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4188EA246A90DA009BBF06 /* NSAttributedString+CTHeight.h */; };
 		3A4188ED246A90DA009BBF06 /* NSAttributedString+CTHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4188EB246A90DA009BBF06 /* NSAttributedString+CTHeight.m */; };
 		3A88AE4ECDF201EC6F971B62791AC033 /* NSObject+CTUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB733DBD5E78684DE5DF24FC30567BC /* NSObject+CTUIViewController.m */; };
+		3AAE775624B8075800440DCF /* NSString+CTEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAE775424B8075800440DCF /* NSString+CTEmoji.h */; };
+		3AAE775724B8075800440DCF /* NSString+CTEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE775524B8075800440DCF /* NSString+CTEmoji.m */; };
 		3D49CA3A9D8C475E69771D0A32562837 /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C83F02A2C13C52DA00FDA9BC713CB3DE /* YYTextContainerView.m */; };
 		3DCE819F512E092B35B40737C05E675D /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 9567B5396087BCBECC1221F0F47EA42E /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F33592F28B4E0DDB57C4DA10A6D3484 /* YYTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAEAED93B5676EFC038DFB55C3ECBBA /* YYTextArchiver.m */; };
@@ -311,6 +313,8 @@
 		3A4188EA246A90DA009BBF06 /* NSAttributedString+CTHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CTHeight.h"; sourceTree = "<group>"; };
 		3A4188EB246A90DA009BBF06 /* NSAttributedString+CTHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CTHeight.m"; sourceTree = "<group>"; };
 		3AA58037A7D2805F6901447DBF54190A /* NSData+CTHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+CTHash.h"; sourceTree = "<group>"; };
+		3AAE775424B8075800440DCF /* NSString+CTEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CTEmoji.h"; sourceTree = "<group>"; };
+		3AAE775524B8075800440DCF /* NSString+CTEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CTEmoji.m"; sourceTree = "<group>"; };
 		3B1FBC1C7D8FA39CB2C6F3660319035E /* NSData+CTHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+CTHash.m"; sourceTree = "<group>"; };
 		3B621C7F888B64A7513B0B046CE69E3C /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		3C25480A4045CDCF3AE80A65274F02C5 /* UIView+badge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+badge.h"; sourceTree = "<group>"; };
@@ -823,6 +827,8 @@
 				30C7EF458A5EE1E639C3902AF74DE10E /* NSString+CTHeight.m */,
 				767BE7DF1EE8F047A7D669C9DEC7F299 /* NSString+CTURL.h */,
 				77860E2DE7209D107E19B1B3B522B8BC /* NSString+CTURL.m */,
+				3AAE775424B8075800440DCF /* NSString+CTEmoji.h */,
+				3AAE775524B8075800440DCF /* NSString+CTEmoji.m */,
 				3A4188EA246A90DA009BBF06 /* NSAttributedString+CTHeight.h */,
 				3A4188EB246A90DA009BBF06 /* NSAttributedString+CTHeight.m */,
 			);
@@ -1069,6 +1075,7 @@
 				25F4804AA672FA9C1B4D84DD2EC83C6F /* DNBaseMacro.h in Headers */,
 				17ABB3840B5C42D39B4FD32173F2D005 /* DNCCustomLabel.h in Headers */,
 				F79ED9B1D1EC119A227DB13527794D6F /* DNCommonKit-umbrella.h in Headers */,
+				3AAE775624B8075800440DCF /* NSString+CTEmoji.h in Headers */,
 				0D4F9A2307C3DE9A1CD2B4D6C735065B /* DNCProgressView.h in Headers */,
 				F8C46155702E9B83C71F9F4CE96341E5 /* DNHandyCategory.h in Headers */,
 				83F9395E2847F44E123B9A11A7825C18 /* DNYYTextTool.h in Headers */,
@@ -1412,6 +1419,7 @@
 				EB62D38F7D2B0E52A76A86EDBE88FC8B /* UIImage+CTAdd.m in Sources */,
 				A5FC53605E790C0C0997E31470C40B5C /* UIImageView+CTSDWebImage.m in Sources */,
 				10813A79B864497EE8152576B33A1290 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				3AAE775724B8075800440DCF /* NSString+CTEmoji.m in Sources */,
 				6F1DFC4AE355B390D0897E10665D4B2E /* UIProgressView+CTRadius.m in Sources */,
 				CFCB7AFA13237B50741CDD111EB673E4 /* UIView+badge.m in Sources */,
 				5171610CD6521F578EC46E3977434A71 /* UIView+CTLayout.m in Sources */,
