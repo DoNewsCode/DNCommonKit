@@ -47,6 +47,8 @@
 		344BD3ECD78F569D5C543A142C6978FC /* SDWebImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E1509606D66B7081E283D5F644AFD /* SDWebImageCodersManager.m */; };
 		3A4188EC246A90DA009BBF06 /* NSAttributedString+CTHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4188EA246A90DA009BBF06 /* NSAttributedString+CTHeight.h */; };
 		3A4188ED246A90DA009BBF06 /* NSAttributedString+CTHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4188EB246A90DA009BBF06 /* NSAttributedString+CTHeight.m */; };
+		3A77FFC424C171E80024917C /* NSString+CTQRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A77FFC224C171E80024917C /* NSString+CTQRCode.h */; };
+		3A77FFC524C171E80024917C /* NSString+CTQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77FFC324C171E80024917C /* NSString+CTQRCode.m */; };
 		3A88AE4ECDF201EC6F971B62791AC033 /* NSObject+CTUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB733DBD5E78684DE5DF24FC30567BC /* NSObject+CTUIViewController.m */; };
 		3AAE775624B8075800440DCF /* NSString+CTEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAE775424B8075800440DCF /* NSString+CTEmoji.h */; };
 		3AAE775724B8075800440DCF /* NSString+CTEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE775524B8075800440DCF /* NSString+CTEmoji.m */; };
@@ -312,6 +314,8 @@
 		37A21BA21DEFB5B9351322ED685E99E8 /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/SDAnimatedImageRep.m; sourceTree = "<group>"; };
 		3A4188EA246A90DA009BBF06 /* NSAttributedString+CTHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CTHeight.h"; sourceTree = "<group>"; };
 		3A4188EB246A90DA009BBF06 /* NSAttributedString+CTHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CTHeight.m"; sourceTree = "<group>"; };
+		3A77FFC224C171E80024917C /* NSString+CTQRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CTQRCode.h"; sourceTree = "<group>"; };
+		3A77FFC324C171E80024917C /* NSString+CTQRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CTQRCode.m"; sourceTree = "<group>"; };
 		3AA58037A7D2805F6901447DBF54190A /* NSData+CTHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+CTHash.h"; sourceTree = "<group>"; };
 		3AAE775424B8075800440DCF /* NSString+CTEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CTEmoji.h"; sourceTree = "<group>"; };
 		3AAE775524B8075800440DCF /* NSString+CTEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CTEmoji.m"; sourceTree = "<group>"; };
@@ -829,6 +833,8 @@
 				77860E2DE7209D107E19B1B3B522B8BC /* NSString+CTURL.m */,
 				3AAE775424B8075800440DCF /* NSString+CTEmoji.h */,
 				3AAE775524B8075800440DCF /* NSString+CTEmoji.m */,
+				3A77FFC224C171E80024917C /* NSString+CTQRCode.h */,
+				3A77FFC324C171E80024917C /* NSString+CTQRCode.m */,
 				3A4188EA246A90DA009BBF06 /* NSAttributedString+CTHeight.h */,
 				3A4188EB246A90DA009BBF06 /* NSAttributedString+CTHeight.m */,
 			);
@@ -1093,6 +1099,7 @@
 				86DFC2F00B85C23D0B4FD1AE0919CFCA /* NSString+CTAttributedString.h in Headers */,
 				BC7EBB1D71314F53AD6A0761312994FA /* NSString+CTDate.h in Headers */,
 				2E2F487A993C613A5DA1935C014A1E42 /* NSString+CTHash.h in Headers */,
+				3A77FFC424C171E80024917C /* NSString+CTQRCode.h in Headers */,
 				E776B8E187FA15DC64AB8FE679883269 /* NSString+CTHeight.h in Headers */,
 				F6A4029E2B99267488068331B1888471 /* NSString+CTURL.h in Headers */,
 				A4EF7A80915A5E9642CD0E6AF5D9944F /* UIButton+CTActionBlock.h in Headers */,
@@ -1406,6 +1413,7 @@
 				3A88AE4ECDF201EC6F971B62791AC033 /* NSObject+CTUIViewController.m in Sources */,
 				3F8E5A676302616BD7F91CD08D786F7B /* NSObject+CTunrecognizedCrash.m in Sources */,
 				9B64B9477EB8329214571340CEF6F753 /* NSObject+CTUSerDefault.m in Sources */,
+				3A77FFC524C171E80024917C /* NSString+CTQRCode.m in Sources */,
 				E330C45DD63C7B59C75EA16DA71F7777 /* NSObject+CTZIP.m in Sources */,
 				A13DB4F1237B909FC06A6D07437FB301 /* NSString+CTAdd.m in Sources */,
 				C932BCE60375801AF174E56134AB7AB5 /* NSString+CTAttributedString.m in Sources */,
