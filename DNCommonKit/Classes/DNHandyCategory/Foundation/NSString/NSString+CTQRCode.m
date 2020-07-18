@@ -56,7 +56,7 @@
 }
 
 
-void DRPProviderReleaseData (void  *info, const void *data, size_t size){
+void NSStringCTQRCodeData (void  *info, const void *data, size_t size){
     free((void*)data);
 }
 
@@ -109,7 +109,7 @@ void DRPProviderReleaseData (void  *info, const void *data, size_t size){
         CGDataProviderRef dataProvider = CGDataProviderCreateWithData(NULL,
                                                                       rgbImageBuf,
                                                                       bytesPerRow * imageHeight,
-                                                                      DRPProviderReleaseData);
+                                                                      NSStringCTQRCodeData);
         CGImageRef imageRef = CGImageCreate(imageWidth,
                                             imageHeight,
                                             8,
