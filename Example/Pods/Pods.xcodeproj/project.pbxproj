@@ -50,6 +50,8 @@
 		3A77FFC424C171E80024917C /* NSString+CTQRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A77FFC224C171E80024917C /* NSString+CTQRCode.h */; };
 		3A77FFC524C171E80024917C /* NSString+CTQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77FFC324C171E80024917C /* NSString+CTQRCode.m */; };
 		3A88AE4ECDF201EC6F971B62791AC033 /* NSObject+CTUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB733DBD5E78684DE5DF24FC30567BC /* NSObject+CTUIViewController.m */; };
+		3A9C08E824CA83A800E3F3CE /* NSString+CTVerification.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9C08E624CA83A800E3F3CE /* NSString+CTVerification.h */; };
+		3A9C08E924CA83A800E3F3CE /* NSString+CTVerification.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C08E724CA83A800E3F3CE /* NSString+CTVerification.m */; };
 		3AAE775624B8075800440DCF /* NSString+CTEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AAE775424B8075800440DCF /* NSString+CTEmoji.h */; };
 		3AAE775724B8075800440DCF /* NSString+CTEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE775524B8075800440DCF /* NSString+CTEmoji.m */; };
 		3D49CA3A9D8C475E69771D0A32562837 /* YYTextContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C83F02A2C13C52DA00FDA9BC713CB3DE /* YYTextContainerView.m */; };
@@ -316,6 +318,8 @@
 		3A4188EB246A90DA009BBF06 /* NSAttributedString+CTHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CTHeight.m"; sourceTree = "<group>"; };
 		3A77FFC224C171E80024917C /* NSString+CTQRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CTQRCode.h"; sourceTree = "<group>"; };
 		3A77FFC324C171E80024917C /* NSString+CTQRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CTQRCode.m"; sourceTree = "<group>"; };
+		3A9C08E624CA83A800E3F3CE /* NSString+CTVerification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CTVerification.h"; sourceTree = "<group>"; };
+		3A9C08E724CA83A800E3F3CE /* NSString+CTVerification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CTVerification.m"; sourceTree = "<group>"; };
 		3AA58037A7D2805F6901447DBF54190A /* NSData+CTHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+CTHash.h"; sourceTree = "<group>"; };
 		3AAE775424B8075800440DCF /* NSString+CTEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CTEmoji.h"; sourceTree = "<group>"; };
 		3AAE775524B8075800440DCF /* NSString+CTEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CTEmoji.m"; sourceTree = "<group>"; };
@@ -837,6 +841,8 @@
 				3A77FFC324C171E80024917C /* NSString+CTQRCode.m */,
 				3A4188EA246A90DA009BBF06 /* NSAttributedString+CTHeight.h */,
 				3A4188EB246A90DA009BBF06 /* NSAttributedString+CTHeight.m */,
+				3A9C08E624CA83A800E3F3CE /* NSString+CTVerification.h */,
+				3A9C08E724CA83A800E3F3CE /* NSString+CTVerification.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1087,6 +1093,7 @@
 				83F9395E2847F44E123B9A11A7825C18 /* DNYYTextTool.h in Headers */,
 				ABF40E2D308CC3E17F57123228F0EBD6 /* NSArray+CTGuard.h in Headers */,
 				8BA5F1AED418963EA69FF581CE817F9B /* NSArray+CTLog.h in Headers */,
+				3A9C08E824CA83A800E3F3CE /* NSString+CTVerification.h in Headers */,
 				B34FA4F81FDE934B236502C2CB1E7F77 /* NSData+CTHash.h in Headers */,
 				B03EA7FB53C3FA3D7557CADFCE6FCAE4 /* NSDate+CTString.h in Headers */,
 				E7D53FD09D969B34C1C0C893D60E7834 /* NSDictionary+CTGuard.h in Headers */,
@@ -1421,6 +1428,7 @@
 				D19CC113132622C9B9901E421CE39275 /* NSString+CTHash.m in Sources */,
 				273B20173B1F59F18B4735AF60FFE3AE /* NSString+CTHeight.m in Sources */,
 				B172B0416DCE97799F757D2539A7667A /* NSString+CTURL.m in Sources */,
+				3A9C08E924CA83A800E3F3CE /* NSString+CTVerification.m in Sources */,
 				9A719ACBAACE4826AA2FA30C8E8060A2 /* UIButton+CTActionBlock.m in Sources */,
 				2B1C2CFDE74E748D059294154B99672C /* UIButton+CTTitlePlace.m in Sources */,
 				5342163514C83683D29F988A21C54618 /* UIColor+CTHex.m in Sources */,
