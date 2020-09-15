@@ -11,7 +11,6 @@
 
 @implementation NSString (CTDate)
 
-
 - (NSDate *)ct_dateFromRFC3339 {
     NSDateFormatter *rfc3339DateFormatter = [[NSDateFormatter alloc] init];
     rfc3339DateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSSSS";
@@ -29,8 +28,6 @@
     return date;
     
 }
-
-
 
 - (NSString *)ct_fromTimeStampToDetailDesc {
     
@@ -171,6 +168,22 @@
     NSTimeInterval a=[dat timeIntervalSince1970];
     NSString*timeString = [NSString stringWithFormat:@"%0.f",a];
     return timeString;
+}
+
++ (NSString *)ct_StringRemainingTimeWithSecond:(NSUInteger)second {
+    NSUInteger minute = second / 60;
+    NSUInteger hour = minute / 60;
+    NSUInteger day = hour / 24;
+    if (day > 0) {
+        return [NSString stringWithFormat:@"%zd天",day];
+    }
+    if (hour > 0) {
+        return [NSString stringWithFormat:@"%zd小时",hour];
+    }
+    if (minute > 0) {
+        return [NSString stringWithFormat:@"%zd分钟",minute];
+    }
+    return [NSString stringWithFormat:@"%zd秒",second];
 }
 
 @end

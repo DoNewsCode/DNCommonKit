@@ -19,7 +19,6 @@
 /** 将未来时间戳转换成具体的时间描述 */
 - (NSString *)ct_fromTimeStampToFutureDetailDesc;
 
-
 //-------------
 // Class Method
 //-------------
@@ -31,5 +30,9 @@
 + (NSString *)ct_stringMSWithSecond:(NSUInteger)second;
 /// 传入时间戳字符串 返回 yyyy-MM-dd
 + (NSString *)ct_getDateStringWithTimeInterval:(NSString *)timeInterStr;
+
+/// 传人秒转为剩余时间格式（XX天，XX小时，XX分钟，XX秒）
+/// @param second 秒
++ (NSString *)ct_StringRemainingTimeWithSecond:(NSUInteger)second;
 
 @end
