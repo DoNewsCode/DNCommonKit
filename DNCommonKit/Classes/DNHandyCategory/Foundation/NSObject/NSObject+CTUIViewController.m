@@ -13,19 +13,19 @@
 - (UIViewController *)ct_currentTopViewController {
     
     UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
-    while (YES){
+    // 修正获取顶部控制器的while逻辑
+    while ([topController isKindOfClass:[UITabBarController class]] || [topController isKindOfClass:[UINavigationController class]]){
         //根据不同的页面切换方式，逐步取得最上层的viewController
         if ([topController isKindOfClass:[UITabBarController class]]) {
             topController = ((UITabBarController*)topController).selectedViewController;
-        }
-        if ([topController isKindOfClass:[UINavigationController class]]) {
+        }else if ([topController isKindOfClass:[UINavigationController class]]) {
             topController = ((UINavigationController*)topController).visibleViewController;
         }
+        
         if (topController.presentedViewController) {
             topController = topController.presentedViewController;
-        } else {
-            break;
         }
+        
     }
     return topController;
 }
