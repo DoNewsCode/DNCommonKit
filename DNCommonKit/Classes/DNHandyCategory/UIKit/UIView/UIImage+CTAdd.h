@@ -9,6 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, UIImageGradientDirection) {
+    UIImageGradientDirectionTopToBottom = 0,    // 从上往下 渐变
+    UIImageGradientDirectionLeftToRight,        // 从左往右
+    UIImageGradientDirectionBottomToTop,      // 从下往上
+    UIImageGradientDirectionRightToLeft      // 从右往左
+};
+
 @interface UIImage (CTAdd)
 
 /// 从bundle中获取图片
@@ -24,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param color 颜色
 /// @param cornerRadius 圆角尺寸
 + (instancetype)ct_imageWithColor:(UIColor *)color cornerRadius:(CGFloat)cornerRadius;
+
++ (UIImage *)ct_gradientImageWithBounds:(CGRect)bounds andColors:(NSArray*)colors andGradientType:(UIImageGradientDirection)gradientType;
 
 @end
 
