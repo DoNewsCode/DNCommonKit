@@ -11,7 +11,7 @@
 
 // iPhoneX、iPhoneXR、iPhoneXs、iPhoneXs Max等
 // 判断刘海屏，返回YES表示是刘海屏
-- (BOOL)isNotchScreen {
+- (BOOL)ct_isNotchScreen {
     
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
         return NO;

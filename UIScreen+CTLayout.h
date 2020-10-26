@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // iPhoneX、iPhoneXR、iPhoneXs、iPhoneXs Max等
 // 判断刘海屏，返回YES表示是刘海屏
-- (BOOL)isNotchScreen;
+- (BOOL)ct_isNotchScreen;
 
 @end
 
