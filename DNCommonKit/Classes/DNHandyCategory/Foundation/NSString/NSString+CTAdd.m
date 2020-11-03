@@ -55,4 +55,16 @@
     return NO;
 }
 
+- (NSUInteger)ct_numberOfCharacters {
+    NSRegularExpression *tLetterRegularExpression = [NSRegularExpression regularExpressionWithPattern:@"[A-Za-z]" options:NSRegularExpressionCaseInsensitive error:nil];
+
+    NSUInteger tLetterMatchCount = [tLetterRegularExpression numberOfMatchesInString:self options:NSMatchingReportProgress range:NSMakeRange(0, self.length)];
+    NSRegularExpression *tChineseRegularExpression = [NSRegularExpression regularExpressionWithPattern:@"[\u4e00-\u9fa5]"options:NSRegularExpressionCaseInsensitive error:nil];
+
+    NSUInteger tChineseMatchCount = [tChineseRegularExpression numberOfMatchesInString:self options:NSMatchingReportProgress range:NSMakeRange(0, self.length)];
+
+    NSInteger totalCount = tLetterMatchCount * 1 + tChineseMatchCount * 3 + (self.length - tLetterMatchCount - tChineseMatchCount);
+    return totalCount;
+}
+
 @end

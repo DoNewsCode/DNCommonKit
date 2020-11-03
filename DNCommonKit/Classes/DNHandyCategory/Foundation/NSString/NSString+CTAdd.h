@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// nil, @"", @"  ", @"\n" will Returns NO; otherwise Returns YES.
 - (BOOL)ct_blank;
 
+/// 返回字符串的字符长度（中文占3个字符）
+- (NSUInteger)ct_numberOfCharacters;
+
 @end
 
 NS_ASSUME_NONNULL_END
