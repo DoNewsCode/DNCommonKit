@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)ct_formatCountStringWithCount:(NSUInteger)count;
 /// 评论数超过999 返回字符串 1000->1k 1001->1万 1100->1.1k 1200->1.2k...
 + (instancetype)ct_commentCountStringWithCount:(NSUInteger)count;
+/// 评论数超过9999 返回字符串 1W 11000 -> 1.1W
++ (instancetype)ct_formatCountStringForWWithCount:(NSUInteger)count;
 
 - (instancetype)ct_substringWithRange:(NSRange)range;
 

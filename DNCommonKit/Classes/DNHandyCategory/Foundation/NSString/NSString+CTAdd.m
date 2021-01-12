@@ -30,6 +30,15 @@
     return [NSString stringWithFormat:@"%lu",(unsigned long)count];
 }
 
++ (instancetype)ct_formatCountStringForWWithCount:(NSUInteger)count {
+    float temp = count / 1000.0;
+        if (temp >= 10) {
+            float tempW = count / 10000.0;
+            return [NSString stringWithFormat:@"%.1fW",tempW];
+        }
+    return [NSString stringWithFormat:@"%lu",(unsigned long)count];
+}
+
 - (instancetype)ct_substringWithRange:(NSRange)range{
 #ifdef DEBUG
     if (self.length >=(range.location + range.length)) {
